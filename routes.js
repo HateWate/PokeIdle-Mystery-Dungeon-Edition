@@ -1,255 +1,248 @@
 const ROUTES = {
-  Kanto: {
+  Kanto137: {
     starter: {
       name: 'Pallet Town'
-    , pokes: ['Bulbasaur', 'Charmander', 'Squirtle']
+    , pokes: ['Bulbasaur', 'Charmander', 'Squirtle', 'Pikachu', 'Eevee']
     , minLevel: 5
     , maxLevel: 5
     , unlocked: true
     }
    , route: {
       name: 'Route 1'
-    , pokes: ['Pidgey', 'Rattata']
+    , pokes: ['Pidgey', 'Rattata', 'Pikachu', 'Oddish', 'Bellsprout']
     , minLevel: 2
-    , maxLevel: 5
+    , maxLevel: 7
+    , unlocked: true
+    }
+   , kantocustom1: {
+      name: 'Trainer House'
+    , pokes: ['Meganium', 'Typhlosion', 'Feraligatr']
+    , minLevel: 50
+    , maxLevel: 50
     , unlocked: true
     }
    , route1: {
+      name: 'Route 22'
+    , pokes: ['Pidgey', 'Rattata', 'Spearow', 'Nidoran f', 'Nidoran m', 'Mankey']
+    , minLevel: 2
+    , maxLevel: 6
+    , unlocked: true
+    }
+   , route2: {
       name: 'Route 2'
-    , pokes: ['Pidgey', 'Rattata', 'Caterpie', 'Weedle']
-    , minLevel: 3
-    , maxLevel: 5
+    , pokes: ['Caterpie', 'Weedle', 'Pidgey', 'Rattata', 'Nidoran f', 'Nidoran m', 'Oddish', 'Bellsprout']
+    , minLevel: 2
+    , maxLevel: 8
     , unlocked: true
     }
    , special: {
       name: 'Viridian Forest'
-    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Pikachu']
+    , pokes: ['Bulbasaur', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey', 'Pidgeotto', 'Pikachu', 'Oddish', 'Bellsprout']
     , minLevel: 3
-    , maxLevel: 6
-    , unlocked: true
-    }
-   , special1: {
-      name: 'Pewter City'
-    , pokes: ['Omanyte', 'Kabuto', 'Aerodactyl']
-    , minLevel: 5
-    , maxLevel: 5
-    , unlocked: true
-    }
-   , route2: {
-      name: 'Route 3'
-    , pokes: ['Pidgey', 'Spearow', 'Jigglypuff']
-    , minLevel: 5
-    , maxLevel: 12
-    , unlocked: true
-    }
-   , special2: {
-      name: 'Mt. Moon'
-    , pokes: ['Zubat', 'Clefairy', 'Paras', 'Geodude']
-    , minLevel: 6
-    , maxLevel: 12
+    , maxLevel: 9
     , unlocked: true
     }
    , route3: {
+      name: 'Route 3'
+    , pokes: ['Charmander', 'Pidgey', 'Rattata', 'Spearow', 'Ekans', 'Sandshrew', 'Nidoran f', 'Nidoran m', 'Jigglypuff', 'Mankey']
+    , minLevel: 5
+    , maxLevel: 12
+    , unlocked: true
+    }
+   , special1: {
+      name: 'Mt. Moon'
+    , pokes: ['Sandshrew', 'Clefairy', 'Clefable', 'Zubat', 'Paras', 'Geodude', 'Onix', 'Chansey']
+    , minLevel: 6
+    , maxLevel: 13
+    , unlocked: true
+    }
+   , route4: {
       name: 'Route 4'
-    , pokes: ['Rattata', 'Spearow', 'Ekans', 'Sandshrew']
+    , pokes: ['Charmander', 'Rattata', 'Spearow', 'Ekans', 'Sandshrew', 'Psyduck', 'Mankey']
     , minLevel: 6
     , maxLevel: 12
     , unlocked: true
     }
-   , route4: {
-      name: 'Route 5'
-    , pokes: ['Pidgey', 'Oddish', 'Meowth', 'Mankey', 'Bellsprout']
-    , minLevel: 10
-    , maxLevel: 16
-    , unlocked: true
-    }
    , route5: {
-      name: 'Route 6'
-    , pokes: ['Pidgey',	'Pidgeotto', 'Oddish', 'Meowth', 'Mankey', 'Abra', 'Bellsprout']
-    , minLevel: 10
-    , maxLevel: 16
+      name: 'Routes 24-25'
+    , pokes: ['Squirtle', 'Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Pidgey', 'Pidgeotto', 'Oddish', 'Venonat', 'Meowth', 'Psyduck', 'Abra', 'Bellsprout']
+    , minLevel: 7
+    , maxLevel: 17
     , unlocked: true
     }
    , route6: {
-      name: 'Route 7'
-    , pokes: ['Pidgey', 'Vulpix', 'Oddish', 'Meowth', 'Mankey', 'Growlithe', 'Bellsprout']
-    , minLevel: 18
-    , maxLevel: 22
+      name: 'Route 5'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Vulpix', 'Jigglypuff', 'Oddish', 'Meowth', 'Mankey', 'Growlithe', 'Abra', 'Bellsprout', 'Chansey']
+    , minLevel: 10
+    , maxLevel: 17
     , unlocked: true
     }
    , route7: {
-      name: 'Route 8'
-    , pokes: ['Pidgey', 'Pidgeotto', 'Vulpix', 'Oddish', 'Meowth', 'Mankey', 'Growlithe', 'Abra', 'Kadabra', 'Bellsprout']
-    , minLevel: 15
+      name: 'Route 6'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Vulpix', 'Jigglypuff', 'Oddish', 'Meowth', 'Psyduck', 'Mankey', 'Growlithe', 'Abra', 'Bellsprout', 'Chansey']
+    , minLevel: 10
+    , maxLevel: 17
+    , unlocked: true
+    }
+   , route8: {
+      name: 'Route 11'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Spearow', 'Ekans', 'Sandshrew', 'Drowzee', 'Mr. Mime', 'Chansey']
+    , minLevel: 9
     , maxLevel: 20
     , unlocked: true
     }
-   , special3: {
+   , special2: {
       name: 'Diglett Cave'
-    , pokes: ['Diglett', 'Dugtrio']
+    , pokes: ['Zubat', 'Diglett', 'Dugtrio', 'Chansey']
     , minLevel: 15
     , maxLevel: 31
     , unlocked: true
     }
-   , route8: {
-      name: 'Route 9'
-    , pokes: ['Spearow', 'Ekans', 'Sandshrew', 'Drowzee']
-    , minLevel: 9
-    , maxLevel: 17
-    , unlocked: true
-    }
    , route9: {
-      name: 'Route 10'
-    , pokes: ['Spearow', 'Ekans', 'Sandshrew', 'Voltorb']
+      name: 'Route 9'
+    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Sandshrew', 'Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Chansey']
     , minLevel: 11
-    , maxLevel: 17
-    , unlocked: true
-    }
-   , special4: {
-      name: 'Rock Tunnel'
-    , pokes: ['Zubat', 'Machop', 'Geodude', 'Onix']
-    , minLevel: 11
-    , maxLevel: 17
-    , unlocked: true
-    }
-   , special5: {
-      name: 'Power Plant'
-    , pokes: ['Pikachu', 'Raichu', 'Magnemite', 'Magneton', 'Voltorb', 'Electrode', 'Electabuzz']
-    , minLevel: 25
-    , maxLevel: 35
-    , unlocked: true
-    }
-   , special6: {
-      name: 'Pokemon Tower'
-    , pokes: ['Gastly',	'Haunter', 'Cubone']
-    , minLevel: 13
-    , maxLevel: 18
+    , maxLevel: 22
     , unlocked: true
     }
    , route10: {
-      name: 'Route 11'
-    , pokes: ['Spearow', 'Ekans', 'Sandshrew', 'Drowzee']
-    , minLevel: 18
-    , maxLevel: 25
+      name: 'Route 10'
+    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Sandshrew', 'Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Machop', 'Magnemite', 'Krabby', 'Voltorb', 'Chansey']
+    , minLevel: 11
+    , maxLevel: 23
     , unlocked: true
     }
-   , special7: {
-      name: 'Celadon City'
-    , pokes: ['Eevee', 'Porygon']
-    , minLevel: 25
-    , maxLevel: 30
+   , special3: {
+      name: 'Rock Tunnel'
+    , pokes: ['Charmander', 'Zubat', 'Golbat', 'Mankey', 'Machop', 'Geodude', 'Graveler', 'Onix', 'Cubone', 'Rhyhorn', 'Kangaskhan']
+    , minLevel: 13
+    , maxLevel: 23
     , unlocked: true
     }
-   , special8: {
-      name: 'Saffron City'
-    , pokes: ['Hitmonlee', 'Hitmonchan', 'Lapras']
-    , minLevel: 30
-    , maxLevel: 30
+   , special4: {
+      name: 'Pokemon Tower'
+    , pokes: ['Zubat', 'Gastly', 'Haunter', 'Cubone', 'Chansey']
+    , minLevel: 13
+    , maxLevel: 32
     , unlocked: true
     }
    , route11: {
-      name: 'Route 12'
-    , pokes: ['Pidgey', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Snorlax']
-    , minLevel: 22
-    , maxLevel: 30
+      name: 'Route 8'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Ekans', 'Sandshrew', 'Vulpix', 'Ninetales', 'Jigglypuff', 'Meowth', 'Mankey', 'Growlithe', 'Arcanine', 'Abra', 'Kadabra', 'Chansey']
+    , minLevel: 15
+    , maxLevel: 27
     , unlocked: true
     }
    , route12: {
-      name: 'Route 13'
-    , pokes: ['Pidgey', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Ditto']
-    , minLevel: 22
+      name: 'Route 7'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Vulpix', 'Ninetales', 'Jigglypuff', 'Oddish', 'Meowth', 'Mankey', 'Growlithe', 'Arcanine', 'Abra', 'Kadabra', 'Bellsprout', 'Porygon']
+    , minLevel: 15
+    , maxLevel: 27
+    , unlocked: true
+    }
+   , special5: {
+      name: 'Rocket Game Corner'
+    , pokes: ['Pikachu', 'Nidorina', 'Nidorino', 'Clefairy', 'Clefable', 'Wigglytuff', 'Abra', 'Horsea', 'Scyther', 'Pinsir', 'Porygon', 'Dratini', 'Dragonair']
+    , minLevel: 6
     , maxLevel: 30
     , unlocked: true
     }
    , route13: {
-      name: 'Route 14'
-    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Ditto']
-    , minLevel: 23
-    , maxLevel: 30
+      name: 'Route 16'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Doduo', 'Dodrio', 'Chansey', 'Snorlax']
+    , minLevel: 18
+    , maxLevel: 36
     , unlocked: true
     }
    , route14: {
-      name: 'Route 15'
-    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Ditto']
-    , minLevel: 22
-    , maxLevel: 30
+      name: 'Route 17'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Psyduck', 'Ponyta', 'Rapidash', 'Doduo', 'Dodrio', 'Eevee', 'Chansey']
+    , minLevel: 20
+    , maxLevel: 38
     , unlocked: true
     }
    , route15: {
-      name: 'Route 16'
-    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Doduo', 'Snorlax']
-    , minLevel: 18
-    , maxLevel: 30
+      name: 'Route 18'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Doduo', 'Dodrio', 'Chansey']
+    , minLevel: 20
+    , maxLevel: 38
     , unlocked: true
     }
    , route16: {
-      name: 'Route 17'
-    , pokes: ['Raticate', 'Spearow', 'Fearow', 'Doduo']
-    , minLevel: 20
-    , maxLevel: 29
+      name: 'Route 12'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Farfetch/d', 'Krabby', 'Kingler', 'Chansey', 'Snorlax']
+    , minLevel: 22
+    , maxLevel: 36
     , unlocked: true
     }
    , route17: {
-      name: 'Route 18'
-    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Doduo']
-    , minLevel: 20
-    , maxLevel: 29
-    , unlocked: true
-    }
-   , special9: {
-      name: 'Safari Zone'
-    , pokes: ['Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Parasect', 'Venonat', 'Exeggcute', 'Rhyhorn', 'Kangaskhan', 'Scyther', 'Pinsir', 'Tauros']
+      name: 'Route 13'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Bellsprout', 'Weepinbell', 'Farfetch/d', 'Krabby', 'Kingler', 'Chansey', 'Ditto']
     , minLevel: 22
-    , maxLevel: 31
-    , unlocked: true
-    }
-   , special10: {
-      name: 'Trading Center'
-    , pokes: ['Farfetchd', 'Jynx', 'Lickitung', 'Mr. Mime'] 
-    , minLevel: 30
-    , maxLevel: 30
+    , maxLevel: 38
     , unlocked: true
     }
    , route18: {
+      name: 'Routes 14-15'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Venomoth', 'Bellsprout', 'Weepinbell', 'Chansey', 'Scyther', 'Pinsir', 'Tauros', 'Ditto']
+    , minLevel: 22
+    , maxLevel: 38
+    , unlocked: true
+    }
+   , special6: {
+      name: 'Safari Zone'
+    , pokes: ['Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Paras', 'Parasect', 'Venonat', 'Doduo', 'Exeggcute', 'Cubone', 'Marowak', 'Rhyhorn', 'Chansey', 'Tangela', 'Kangaskhan', 'Scyther', 'Pinsir', 'Tauros', 'Dratini', 'Dragonair']
+    , minLevel: 22
+    , maxLevel: 35
+    , unlocked: true
+    }
+   , special7: {
+      name: 'Power Plant'
+    , pokes: ['Pikachu', 'Raichu', 'Magnemite', 'Magneton', 'Grimer', 'Muk', 'Voltorb', 'Electrode', 'Koffing', 'Weezing', 'Electabuzz', 'Chansey']
+    , minLevel: 20
+    , maxLevel: 42
+    , unlocked: true
+    }
+   , route19: {
       name: 'Route 19'
-    , pokes: ['Raticate', 'Pidgeotto', 'Oddish', 'Ditto']
-    , minLevel: 26
+    , pokes: ['Poliwag', 'Tentacool', 'Shellder', 'Goldeen', 'Staryu', 'Magikarp', 'Lapras']
+    , minLevel: 23
+    , maxLevel: 42
+    , unlocked: true
+    }
+   , route20: {
+      name: 'Route 20'
+    , pokes: ['Poliwhirl', 'Tentacruel', 'Cloyster', 'Seaking', 'Starmie', 'Gyarados', 'Lapras']
+    , minLevel: 28
+    , maxLevel: 42
+    , unlocked: true
+    }
+   , special8: {
+      name: 'Seafom Island'
+    , pokes: ['Squirtle', 'Zubat', 'Golbat', 'Psyduck', 'Golduck', 'Slowpoke', 'Slowbro', 'Seel', 'Dewgong', 'Shellder', 'Krabby', 'Kingler', 'Horsea', 'Seadra', 'Staryu', 'Jynx'] 
+    , minLevel: 25
+    , maxLevel: 44
+    , unlocked: true
+    }  
+   , special9: {
+      name: 'Fossil Lab'
+    , pokes: ['Omanyte', 'Kabuto', 'Aerodactyl'] 
+    , minLevel: 30
     , maxLevel: 30
     , unlocked: true
-    }
-   , special11: {
-      name: 'Seafom Island'
-    , pokes: ['Zubat', 'Golbat', 'Psyduck', 'Golduck', 'Slowpoke', 'Slowbro', 'Seel', 'Dewgong'] 
-    , minLevel: 29
-    , maxLevel: 37
+    }  
+   , special10: {
+      name: 'Pokemon Mansion'
+    , pokes: ['Rattata', 'Raticate', 'Vulpix', 'Growlithe', 'Ponyta', 'Grimer', 'Muk', 'Koffing', 'Weezing', 'Magmar', 'Ditto', 'Chansey'] 
+    , minLevel: 28
+    , maxLevel: 44
     , unlocked: true
     }  
-   , route19: {
-      name: 'Route 20'
-    , pokes: ['Raticate', 'Pidgeotto', 'Weepinbell', 'Kadabra']
-    , minLevel: 27
-    , maxLevel: 31
-    , unlocked: true
-    }
-   , special12: {
-      name: 'Pkmn Mansion'
-    , pokes: ['Vulpix', 'Growlithe', 'Ponyta', 'Grimer', 'Muk', 'Koffing', 'Weezing', 'Magmar'] 
-    , minLevel: 32
-    , maxLevel: 40
-    , unlocked: true
-    }  
-   , route20: {
+   , route21: {
       name: 'Route 21'
     , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Tangela']
     , minLevel: 21
     , maxLevel: 32
-    , unlocked: true
-    }
-   , route21: {
-      name: 'Route 22'
-    , pokes: ['Pidgey', 'Rattata', 'Nidoran f', 'Nidoran m']
-    , minLevel: 2
-    , maxLevel: 5
     , unlocked: true
     }
    , route22: {
@@ -259,21 +252,7 @@ const ROUTES = {
     , maxLevel: 43
     , unlocked: true
     }
-   , route23: {
-      name: 'Route 24'
-    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Oddish', 'Abra', 'Bellsprout']
-    , minLevel: 7
-    , maxLevel: 14
-    , unlocked: true
-    }
-   , route24: {
-      name: 'Route 25'
-    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Pidgey', 'Oddish', 'Abra', 'Bellsprout']
-    , minLevel: 7
-    , maxLevel: 14
-    , unlocked: true
-    }
-   , special13: {
+   , special11: {
       name: 'Victory Road'
     , pokes: ['Zubat', 'Golbat', 'Venomoth', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Marowak'] 
     , minLevel: 36
@@ -2437,6 +2416,69 @@ const ROUTES = {
     , pokes: ['Meltan'] 
     , minLevel: 30
     , maxLevel: 30
+    , unlocked: true
+    }
+},
+  Colosseum: {
+      console4: {
+      name: 'Starters'
+    , pokes: ['Espeon', 'Umbreon'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  GaleOfDarkness: {
+      console5: {
+      name: 'Starter'
+    , pokes: ['Eevee'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  YellowRescueTeam: {
+      pmd1: {
+      name: 'Personality Quiz'
+    , pokes: ['Magikarp'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  ExplorersOfSpace: {
+      pmd201: {
+      name: 'Old Rod'
+    , pokes: ['Magikarp'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  GatesToInfinity: {
+      event1: {
+      name: 'Old Rod'
+    , pokes: ['Magikarp'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  SuperMysteryDungeon: {
+      event1: {
+      name: 'Old Rod'
+    , pokes: ['Magikarp'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+},
+  CustomEvents: {
+      customevent1: {
+      name: 'Adventure Squad'
+    , pokes: ['Magikarp'] 
+    , minLevel: 5
+    , maxLevel: 5  
     , unlocked: true
     }
 }
