@@ -14,7 +14,7 @@ const ROUTES = {
     , maxLevel: 7
     , unlocked: true
     }
-   , kantocustom1: {
+   , kantocustom: {
       name: 'Trainer House'
     , pokes: ['Meganium', 'Typhlosion', 'Feraligatr']
     , minLevel: 50
@@ -107,7 +107,7 @@ const ROUTES = {
     }
    , route10: {
       name: 'Route 10'
-    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Sandshrew', 'Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Machop', 'Magnemite', 'Krabby', 'Voltorb', 'Chansey']
+    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Sandshrew', 'Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Machop', 'Magnemite', 'Krabby', 'Voltorb', 'Chansey', 'Dratini']
     , minLevel: 11
     , maxLevel: 23
     , unlocked: true
@@ -218,7 +218,7 @@ const ROUTES = {
     , unlocked: true
     }
    , special8: {
-      name: 'Seafom Island'
+      name: 'Seafoam Island'
     , pokes: ['Squirtle', 'Zubat', 'Golbat', 'Psyduck', 'Golduck', 'Slowpoke', 'Slowbro', 'Seel', 'Dewgong', 'Shellder', 'Krabby', 'Kingler', 'Horsea', 'Seadra', 'Staryu', 'Jynx'] 
     , minLevel: 25
     , maxLevel: 44
@@ -240,44 +240,205 @@ const ROUTES = {
     }  
    , route21: {
       name: 'Route 21'
-    , pokes: ['Pidgey', 'Pidgeotto', 'Rattata', 'Raticate', 'Tangela']
-    , minLevel: 21
-    , maxLevel: 32
+    , pokes: ['Pidgey', 'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate', 'Oddish', 'Gloom', 'Vileplume', 'Bellsprout', 'Weepinbell', 'Victreebel', 'Tangela', 'Chansey']
+    , minLevel: 36
+    , maxLevel: 42
     , unlocked: true
     }
    , route22: {
       name: 'Route 23'
-    , pokes: ['Spearow', 'Fearow', 'Ekans', 'Arbok', 'Sandshrew', 'Sandslash', 'Ditto']
-    , minLevel: 33
-    , maxLevel: 43
+    , pokes: ['Spearow', 'Fearow', 'Ekans', 'Arbok', 'Sandshrew', 'Sandslash', 'Nidoran f', 'Nidorina', 'Nidoqueen', 'Nidoran m', 'Nidorino', 'Nidoking', 'Mankey', 'Primeape', 'Exeggcute', 'Exeggutor', 'Ditto', 'Chansey']
+    , minLevel: 36
+    , maxLevel: 46
     , unlocked: true
     }
    , special11: {
       name: 'Victory Road'
-    , pokes: ['Zubat', 'Golbat', 'Venomoth', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Marowak'] 
-    , minLevel: 36
-    , maxLevel: 45
+    , pokes: ['Arbok', 'Sandslash', 'Zubat', 'Golbat', 'Venomoth', 'Primeape', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Onix', 'Marowak', 'Hitmonlee', 'Hitmonchan', 'Rhyhorn', 'Rhydon', 'Chansey'] 
+    , minLevel: 32
+    , maxLevel: 49
     , unlocked: true
     } 
-   , special14: {
+   , special12: {
       name: 'Cerulean Cave'
-    , pokes: ['Wigglytuff', 'Venomoth', 'Kadabra', 'Dodrio', 'Electrode', 'Marowak', 'Rhydon', 'Chansey', 'Ditto'] 
-    , minLevel: 51
+    , pokes: ['Arbok', 'Raichu', 'Sandslash', 'Wigglytuff', 'Zubat', 'Golbat', 'Gloom', 'Parasect', 'Venomoth', 'Psyduck', 'Golduck', 'Primeape', 'Kadabra', 'Machoke', 'Weepinbell', 'Geodude', 'Graveler', 'Magneton', 'Dodrio', 'Hypno', 'Electrode', 'Marowak', 'Lickitung', 'Rhyhorn', 'Rhydon', 'Chansey', 'Ditto', 'Snorlax', 'Wobbuffet'] 
+    , minLevel: 45
     , maxLevel: 60
     , unlocked: true
     }  
+   , kantocustom1: {
+      name: 'Treasure Beach'
+    , pokes: ['Spearow', 'Fearow', 'Meowth', 'Persian', 'Psyduck', 'Slowpoke', 'Tangela']
+    , minLevel: 31
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom2: {
+      name: 'Kindle Road'
+    , pokes: ['Spearow', 'Fearow', 'Meowth', 'Persian', 'Psyduck', 'Geodude', 'Ponyta', 'Rapidash', 'Slowpoke']
+    , minLevel: 30
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom3: {
+      name: 'Mt. Ember'
+    , pokes: ['Spearow', 'Fearow', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Ponyta', 'Rapidash', 'Magmar', 'Slugma', 'Magcargo']
+    , minLevel: 18
+    , maxLevel: 44
+    , unlocked: true
+    }
+   , kantocustom4: {
+      name: 'Cape Brink'
+    , pokes: ['Spearow', 'Fearow', 'Oddish', 'Gloom', 'Meowth', 'Persian', 'Psyduck', 'Golduck', 'Bellsprout', 'Weepinbell', 'Slowpoke', 'Slowbro']
+    , minLevel: 30
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom5: {
+      name: 'Three Isle Port'
+    , pokes: ['Dunsparce']
+    , minLevel: 5
+    , maxLevel: 35
+    , unlocked: true
+    }
+   , kantocustom6: {
+      name: 'Bond Bridge'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Meowth', 'Persian', 'Psyduck', 'Bellsprout', 'Weepinbell', 'Slowpoke']
+    , minLevel: 29
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom7: {
+      name: 'Berry Forest'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Oddish', 'Gloom', 'Venonat', 'Venomoth', 'Psyduck', 'Bellsprout', 'Weepinbell', 'Slowpoke', 'Drowzee', 'Hypno', 'Exeggcute']
+    , minLevel: 30
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom8: {
+      name: 'Icefall Cave'
+    , pokes: ['Zubat', 'Golbat', 'Psyduck', 'Slowpoke', 'Seel', 'Dewgong', 'Lapras', 'Marill', 'Wooper', 'Sneasel', 'Swinub', 'Delibird']
+    , minLevel: 23
+    , maxLevel: 53
+    , unlocked: true
+    }
+   , kantocustom9: {
+      name: 'Five Isle Meadow'
+    , pokes: ['Pidgey', 'Pidgeotto', 'Psyduck', 'Meowth', 'Persian', 'Slowpoke', 'Sentret', 'Hoppip', 'Qwilfish', 'Remoraid']
+    , minLevel: 41
+    , maxLevel: 50
+    , unlocked: true
+    }
+   , kantocustom10: {
+      name: 'Memorial Pillar'
+    , pokes: ['Sentret', 'Hoppip', 'Qwilfish', 'Remoraid']
+    , minLevel: 6
+    , maxLevel: 16
+    , unlocked: true
+    }
+   , kantocustom11: {
+      name: 'Water Labyrinth'
+    , pokes: ['Tentacool', 'Tentacruel', 'Togepi', 'Hoppip', 'Qwilfish', 'Remoraid']
+    , minLevel: 5
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom12: {
+      name: 'Resort Gorgeous'
+    , pokes: ['Tentacool', 'Tentacruel', 'Hoppip', 'Qwilfish', 'Remoraid', 'Mantine']
+    , minLevel: 5
+    , maxLevel: 40
+    , unlocked: true
+    }
+   , kantocustom13: {
+      name: 'Lost Cave'
+    , pokes: ['Zubat', 'Golbat', 'Gastly', 'Haunter', 'Murkrow', 'Misdreavus']
+    , minLevel: 22
+    , maxLevel: 52
+    , unlocked: true
+    }
+   , kantocustom14: {
+      name: 'Water Path'
+    , pokes: ['Spearow', 'Fearow', 'Oddish', 'Gloom', 'Meowth', 'Persian', 'Psyduck', 'Bellsprout', 'Weepinbell', 'Slowpoke', 'Sentret']
+    , minLevel: 40
+    , maxLevel: 50
+    , unlocked: true
+    }
+   , kantocustom15: {
+      name: 'Ruin Valley'
+    , pokes: ['Spearow', 'Fearow', 'Meowth', 'Persian', 'Psyduck', 'Slowpoke', 'Natu', 'Marill', 'Yanma', 'Wooper', 'Wobbuffet']
+    , minLevel: 15
+    , maxLevel: 52
+    , unlocked: true
+    }
+   , kantocustom16: {
+      name: 'Pattern Bush'
+    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Ledyba', 'Spinarak', 'Heracross']
+    , minLevel: 6
+    , maxLevel: 14
+    , unlocked: true
+    }
+   , kantocustom17: {
+      name: 'Altering Cave'
+    , pokes: ['Mareep', 'Aipom', 'Pineco', 'Shuckle', 'Teddiursa', 'Houndour', 'Stantler', 'Smeargle']
+    , minLevel: 3
+    , maxLevel: 28
+    , unlocked: true
+    }
+   , kantocustom18: {
+      name: 'Canyon Entrance'
+    , pokes: ['Spearow', 'Fearow', 'Meowth', 'Persian', 'Psyduck', 'Slowpoke', 'Sentret', 'Phanpy']
+    , minLevel: 41
+    , maxLevel: 50
+    , unlocked: true
+    }
+   , kantocustom19: {
+      name: 'Sevault Canyon'
+    , pokes: ['Fearow', 'Meowth', 'Persian', 'Geodude', 'Onix', 'Cubone', 'Marowak', 'Skarmory', 'Phanpy', 'Larvitar']
+    , minLevel: 15
+    , maxLevel: 54
+    , unlocked: true
+    }
+   , kantocustom20: {
+      name: 'Tanoby Chambers'
+    , pokes: ['Unown']
+    , minLevel: 25
+    , maxLevel: 25
+    , unlocked: true
+    }
+   , special13: {
+      name: 'Ice Island'
+    , pokes: ['Articuno'] 
+    , minLevel: 50
+    , maxLevel: 50
+    , unlocked: true
+    }  
+   , special14: {
+      name: 'Lightning Island'
+    , pokes: ['Zapdos'] 
+    , minLevel: 50
+    , maxLevel: 50
+    , unlocked: true
+    }  
    , special15: {
-      name: 'Legendary Island'
-    , pokes: ['Articuno', 'Zapdos', 'Moltres'] 
+      name: 'Fire Island'
+    , pokes: ['Moltres'] 
     , minLevel: 50
     , maxLevel: 50
     , unlocked: true
     }  
    , special16: {
-      name: 'The Movie'
-    , pokes: ['Mewtwo', 'Mew'] 
+      name: 'New Island'
+    , pokes: ['Mewtwo'] 
     , minLevel: 70
     , maxLevel: 70
+    , unlocked: true
+    }  
+   , special17: {
+      name: 'Faraway Island'
+    , pokes: ['Mew'] 
+    , minLevel: 30
+    , maxLevel: 30
     , unlocked: true
     }  
    , water: {
@@ -296,7 +457,7 @@ const ROUTES = {
     }  
    , water2: {
       name: 'Super Rod'
-    , pokes: ['Shellder', 'Krabby', 'Horsea', 'Staryu',	'Dratini'] 
+    , pokes: ['Shellder', 'Krabby', 'Horsea', 'Staryu'] 
     , minLevel: 35
     , maxLevel: 40
     , unlocked: true
