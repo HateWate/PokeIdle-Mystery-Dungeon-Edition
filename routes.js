@@ -463,7 +463,7 @@ const ROUTES = {
     , unlocked: true
     }  
   },
-  Johto: {
+  Johto24: {
     starter2: {
       name: 'New Bark Town'
     , pokes: ['Chikorita', 'Cyndaquil', 'Totodile'] 
@@ -471,35 +471,42 @@ const ROUTES = {
     , maxLevel: 5
     , unlocked: true
     } 
-	, route25: {
+	, route23: {
       name: 'Route 29'
-    , pokes: ['Sentret', 'Hoothoot', 'Hoppip'] 
+    , pokes: ['Pidgey', 'Rattata', 'Sentret', 'Hoothoot', 'Hoppip'] 
     , minLevel: 2
-    , maxLevel: 3
+    , maxLevel: 4
+    , unlocked: true
+    } 
+	, route24: {
+      name: 'Route 46'
+    , pokes: ['Rattata', 'Spearow', 'Jigglypuff', 'Geodude', 'Phanpy'] 
+    , minLevel: 2
+    , maxLevel: 5
+    , unlocked: true
+    } 
+	, route25: {
+      name: 'Route 30'
+    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Pidgey', 'Rattata', 'Zubat', 'Poliwag', 'Hoothoot', 'Ledyba', 'Spinarak', 'Hoppip'] 
+    , minLevel: 2
+    , maxLevel: 5
     , unlocked: true
     } 
 	, route26: {
-      name: 'Route 46'
-    , pokes: ['Geodude', 'Rattata', 'Spearow', 'Jigglypuff'] 
-    , minLevel: 2
-    , maxLevel: 5
-    , unlocked: true
-    } 
-	, route27: {
-      name: 'Route 30'
-    , pokes: ['Ledyba', 'Hoppip', 'Spinarak', 'Hoothoot'] 
+      name: 'Route 31'
+    , pokes: ['Caterpie', 'Metapod', 'Weedle', 'Kakuna', 'Pidgey', 'Rattata', 'Zubat', 'Poliwag', 'Bellsprout', 'Gastly', 'Hoothoot', 'Ledyba', 'Spinarak', 'Hoppip'] 
     , minLevel: 3
-    , maxLevel: 5
-    , unlocked: true
-    } 
-	, special17: {
-      name: 'Dark Cave'
-    , pokes: ['Teddiursa', 'Dunsparce', 'Ursaring', 'Wobbuffet', 'Slugma'] 
-    , minLevel: 2
-    , maxLevel: 25
+    , maxLevel: 6
     , unlocked: true
     } 
 	, special18: {
+      name: 'Dark Cave'
+    , pokes: ['Zubat', 'Golbat', 'Geodude', 'Graveler', 'Wobbuffet', 'Dunsparce', 'Shuckle', 'Teddiursa', 'Ursaring'] 
+    , minLevel: 2
+    , maxLevel: 30
+    , unlocked: true
+    } 
+	, special19: {
       name: 'Sprout Tower'
     , pokes: ['Rattata', 'Gastly'] 
     , minLevel: 3
@@ -765,6 +772,20 @@ const ROUTES = {
     , maxLevel: 10
     , unlocked: true
     }
+	, special42: {
+      name: 'Hoenn Sounds'
+    , pokes: ['Zigzagoon', 'Linoone', 'Whismur', 'Makuhita', 'Plusle', 'Minun', 'Numel', 'Spoink', 'Spinda', 'Absol'] 
+    , minLevel: 10
+    , maxLevel: 10
+    , unlocked: true
+    }
+	, special43: {
+      name: 'Sinnoh Sounds'
+    , pokes: ['Meditite', 'Bidoof', 'Shinx', 'Budew', 'Buizel', 'Chingling', 'Bronzor', 'Chatot', 'Carnivine'] 
+    , minLevel: 10
+    , maxLevel: 10
+    , unlocked: true
+    }
 	, water3: {
       name: 'Old Rod'
     , pokes: ['Remoraid'] 
@@ -786,6 +807,15 @@ const ROUTES = {
     , maxLevel: 40
     , unlocked: true
     }  
+  },
+  Kanto24: {
+    starter: {
+      name: 'Pallet Town'
+    , pokes: ['Pichu']
+    , minLevel: 5
+    , maxLevel: 5
+    , unlocked: true
+    }
   },
   Hoenn: {
     starter3: {
