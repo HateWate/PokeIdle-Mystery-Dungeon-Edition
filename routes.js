@@ -2611,7 +2611,7 @@ const ROUTES = {
     }
 },
   Colosseum: {
-      console4: {
+      console: {
       name: 'Starters'
     , pokes: ['Espeon', 'Umbreon'] 
     , minLevel: 5
@@ -2620,7 +2620,7 @@ const ROUTES = {
     }
 },
   GaleOfDarkness: {
-      console5: {
+      console1: {
       name: 'Starter'
     , pokes: ['Eevee'] 
     , minLevel: 5
@@ -2629,36 +2629,584 @@ const ROUTES = {
     }
 },
   YellowRescueTeam: {
-      pmd1: {
+      pmd: {
       name: 'Personality Quiz'
-    , pokes: ['Magikarp'] 
+    , pokes: ['Bulbasaur', 'Charmander', 'Squirtle', 'Pikachu', 'Meowth', 'Psyduck', 'Machop', 'Cubone', 'Eevee', 'Chikorita', 'Cyndaquil', 'Totodile', 'Treecko', 'Torchic', 'Mudkip', 'Skitty'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , pmd1: {
+      name: 'Tiny Woods'
+    , pokes: ['Pidgey', 'Sunkern', 'Wurmple', 'Exeggcute'] 
+    , minLevel: 1 
+    , maxLevel: 1
+    , unlocked: true
+    }
+    , pmd2: {
+      name: 'Thunderwave Cave'
+    , pokes: ['Rattata', 'Nidoran f', 'Poochyena', 'Voltorb', 'Elekid', 'Plusle', 'Minun'] 
+    , minLevel: 3 
+    , maxLevel: 4
+    , unlocked: true
+    }
+    , pmd3: {
+      name: 'Mt. Steel'
+    , pokes: ['Spearow', 'Baltoy', 'Zigzagoon', 'Aron', 'Geodude', 'Tyrogue', 'Meditite', 'Beldum', 'Pinsir'] 
+    , minLevel: 4 
+    , maxLevel: 6
+    , unlocked: true
+    }
+    , pmd4: {
+      name: 'Sinister Woods'
+    , pokes: ['Swinub', 'Oddish', 'Sudowoodo', 'Sunflora', 'Sentret', 'Silcoon', 'Cascoon', 'Shroomish', 'Linoone', 'Ledyba', 'Wooper', 'Scyther', 'Exeggutor', 'Hoothoot', 'Slakoth'] 
+    , minLevel: 6 
+    , maxLevel: 10
+    , unlocked: true
+    }
+    , pmd5: {
+      name: 'Silent Chasm'
+    , pokes: ['Farfetch/d', 'Teddiursa', 'Weedle', 'Yanma', 'Gloom', 'Dustox', 'Houndour', 'Poliwag', 'Spinarak', 'Trapinch', 'Paras', 'Beedrill'] 
+    , minLevel: 8 
+    , maxLevel: 12
+    , unlocked: true
+    }
+    , pmd6: {
+      name: 'Mt. Thunder'
+    , pokes: ['Weedle', 'Nidoran m', 'Elextrike', 'Cacnea', 'Pidgeotto', 'Beedrill', 'Electabuzz', 'Stantler', 'Ampharos', 'Gligar', 'Manectric', 'Growlithe'] 
+    , minLevel: 8 
+    , maxLevel: 14
+    , unlocked: true
+    }
+    , pmd7: {
+      name: 'Mt. Thunder Peak'
+    , pokes: ['Growlithe', 'Electabuzz', 'Ampharos', 'Gligar', 'Manectric'] 
+    , minLevel: 9 
+    , maxLevel: 12
+    , unlocked: true
+    }
+    , pmd8: {
+      name: 'Great Canyon'
+    , pokes: ['Skiploom', 'Dunsparce', 'Phanpy', 'Doduo', 'Vileplume', 'Breloom', 'Murkrow', 'Cacturne', 'Noctowl', 'Heracross', 'Ariados', 'Tauros', 'Houndoom'] 
+    , minLevel: 13 
+    , maxLevel: 16
+    , unlocked: true
+    }
+    , pmd9: {
+      name: 'Rock Path'
+    , pokes: ['Pidgeot', 'Nidorina', 'Nidorino', 'Zubat', 'Numel'] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd10: {
+      name: 'Lapis Cave'
+    , pokes: ['Zubat', 'Nincada', 'Illumise', 'Nidorina', 'Nidorino', 'Tangela', 'Bagon', 'Golbat'] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd11: {
+      name: 'Mt. Blaze'
+    , pokes: ['Pidgeot', 'Magby', 'Numel', 'Slugma', 'Shuckle', 'Torkoal', 'Rapidash'] 
+    , minLevel: 14 
+    , maxLevel: 19
+    , unlocked: true
+    }
+    , pmd12: {
+      name: 'Mt. Blaze Peak'
+    , pokes: ['Fearow', 'Arcanine'] 
+    , minLevel: 17 
+    , maxLevel: 18
+    , unlocked: true
+    }
+    , pmd13: {
+      name: 'Snow Path'
+    , pokes: ['Azurill', 'Furret', 'Nosepass', 'Pineco'] 
+    , minLevel: 11 
+    , maxLevel: 18
+    , unlocked: true
+    }
+    , pmd14: {
+      name: 'Frosty Forest'
+    , pokes: ['Azurill', 'Furret', 'Nosepass', 'Piloswine', 'Ditto', 'Mightyena', 'Lairon', 'Snorunt'] 
+    , minLevel: 11 
+    , maxLevel: 20
+    , unlocked: true
+    }
+    , pmd15: {
+      name: 'Frosty Grotto'
+    , pokes: ['Rhyhorn', 'Metang'] 
+    , minLevel: 16 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd16: {
+      name: 'Mt. Freeze'
+    , pokes: ['Pineco', 'Swablu', 'Shelgon', 'Pupitar', 'Seel', 'Vigoroth', 'Zangoose', 'Chimecho', 'Slaking', 'Seviper'] 
+    , minLevel: 15 
+    , maxLevel: 22
+    , unlocked: true
+    }
+    , pmd17: {
+      name: 'Mt. Freeze Peak'
+    , pokes: ['Glalie'] 
+    , minLevel: 20 
+    , maxLevel: 20
+    , unlocked: true
+    }
+    , pmd18: {
+      name: 'Uproar Forest'
+    , pokes: ['Venonat', 'Aipom', 'Seedot', 'Roselia', 'Nuzleaf', 'Mankey'] 
+    , minLevel: 10 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd19: {
+      name: 'Magma Cavern'
+    , pokes: ['Raticate', 'Sandshrew', 'Nidoqueen', 'Nidoking', 'Graveler', 'Magmar', 'Mawile', 'Arbok', 'Magcargo', 'Rhydon', 'Sandslash', 'Golem', 'Grimer', 'Onix'] 
+    , minLevel: 15 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd20: {
+      name: 'Magma Cavern Pit'
+    , pokes: ['Onix', 'Steelix'] 
+    , minLevel: 25 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd21: {
+      name: 'Sky Tower'
+    , pokes: ['Shedinja', 'Forretress', 'Shuppet', 'Masquerain', 'Lunatone', 'Duskull', 'Koffing', 'Ledian', 'Altaria', 'Solrock', 'Scizor', 'Dusclops', 'Venomoth', 'Aerodactyl', 'Flygon', 'Tropius'] 
+    , minLevel: 18 
+    , maxLevel: 28
+    , unlocked: true
+    }
+    , pmd22: {
+      name: 'Sky Tower Summit'
+    , pokes: ['Aerodactyl', 'Flygon', 'Claydol', 'Tropius', 'Salamence', 'Metagross'] 
+    , minLevel: 25 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd23: {
+      name: 'Howling Forest'
+    , pokes: ['Azurill', 'Houndour', 'Poochyena', 'Whismur', 'Spoink', 'Furret', 'Shuckle', 'Pidgey', 'Loudred', 'Houndoom', 'Mightyena', 'Grumpig', 'Snorlax', 'Exeggcute'] 
+    , minLevel: 10 
+    , maxLevel: 25
+    , unlocked: true
+    }
+    , pmd24: {
+      name: 'Stormy Sea'
+    , pokes: ['Wingull', 'Tentacool', 'Shellder', 'Omanyte', 'Seel', 'Anorith', 'Slowpoke', 'Spheal', 'Omastar', 'Grimer', 'Kabutops', 'Armaldo', 'Seadra', 'Starmie', 'Tentacruel', 'Sealeo', 'Carvanha'] 
+    , minLevel: 18 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd25: {
+      name: 'Solar Cave'
+    , pokes: ['Wynaut', 'Girafarig', 'Beldum', 'Drowzee', 'Natu', 'Spoink', 'Jynx', 'Abra', 'Meditite', 'Mr. Mime', 'Lunatone', 'Metang', 'Hypno', 'Kirlia', 'Wobbuffet', 'Chimecho', 'Kadabra', 'Medicham', 'Grumpig', 'Claydol'] 
+    , minLevel: 16 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd26: {
+      name: 'Northern Range'
+    , pokes: ['Hoothoot', 'Beautifly', 'Dodrio', 'Jumpluff', 'Ninjask', 'Spinarak', 'Swellow', 'Pidgeot', 'Ledian', 'Xatu', 'Fearow', 'Togetic', 'Noctowl', 'Seviper'] 
+    , minLevel: 20 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd27: {
+      name: 'Pitfall Valley'
+    , pokes: ['Pidgeot', 'Farfetch/d', 'Ledyba', 'Swellow', 'Hoppip', 'Butterfree', 'Raticate', 'Spearow', 'Doduo', 'Swablu', 'Yanma', 'Masquerain', 'Scyther', 'Skiploom', 'Aerodactyl'] 
+    , minLevel: 8 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd28: {
+      name: 'Silver Trench'
+    , pokes: ['Wingull', 'Tentacool', 'Shellder', 'Omanyte', 'Qwilfish', 'Kabuto', 'Corsola', 'Slowpoke', 'Seel', 'Spheal', 'Horsea', 'Anorith', 'Krabby', 'Staryu', 'Grimer', 'Omastar', 'Vaporeon', 'Kabutops', 'Sealeo', 'Kingler', 'Slowbro', 'Seadra', 'Carvanha', 'Tentacruel', 'Starmie', 'Armaldo', 'Wailmer', 'Luvdisc', 'Dratini', 'Slowking', 'Remoraid', 'Dewgong', 'Muk', 'Octillery', 'Sharpedo', 'Walrein', 'Clamperl', 'Chinchou', 'Kingdra', 'Gorebyss', 'Cloyster', 'Lileep', 'Relicanth', 'Lanturn', 'Cradily', 'Huntail'] 
+    , minLevel: 18 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd29: {
+      name: 'Meteor Cave'
+    , pokes: ['Deoxys-A', 'Deoxys-D', 'Deoxys-S'] 
+    , minLevel: 35 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd30: {
+      name: 'Fiery Field'
+    , pokes: ['Vulpix', 'Numel', 'Ursaring', 'Slugma', 'Magmar', 'Charmander', 'Magby', 'Torkoal', 'Rapidash', 'Flareon', 'Ditto', 'Camerupt', 'Quilava', 'Machoke', 'Magcargo', 'Combusken', 'Charmeleon'] 
+    , minLevel: 22 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd31: {
+      name: 'Lightning Field'
+    , pokes: ['Mareep', 'Electrike', 'Magnemite', 'Pikachu', 'Flaaffy', 'Plusle', 'Minun', 'Jolteon', 'Cacturne', 'Electrode', 'Elekid', 'Ampharos', 'Magneton', 'Tropius', 'Manectric', 'Raichu'] 
+    , minLevel: 12 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd32: {
+      name: 'Northwind Field'
+    , pokes: ['Poliwag', 'Jynx', 'Volbeat', 'Azumarill', 'Crawdaunt', 'Delcatty', 'Vaporeon', 'Poliwhirl', 'Muk', 'Delibird', 'Poliwrath', 'Golduck', 'Politoed', 'Wartortle', 'Croconaw', 'Absol'] 
+    , minLevel: 22 
+    , maxLevel: 50
+    , unlocked: true
+    }
+    , pmd33: {
+      name: 'Mt. Faraway'
+    , pokes: ['Lunatone', 'Hitmonchan', 'Snorunt', 'Solrock', 'Azumarill', 'Golem', 'Marshtomp', 'Vigoroth', 'Parasect', 'Castform', 'Granbull', 'Weezing', 'Dugtrio', 'Croconaw', 'Glalie'] 
+    , minLevel: 15 
+    , maxLevel: 50
+    , unlocked: true
+    }
+    , pmd34: {
+      name: 'Western Cave'
+    , pokes: ['Murkrow', 'Butterfree', 'Beedrill', 'Venonat', 'Snubbull', 'Ekans', 'Meowth', 'Smeargle', 'Bellossom', 'Venomoth', 'Exploud', 'Primeape', 'Igglybuff', 'Tauros', 'Miltank', 'Shiftry', 'Kangaskhan', 'Espeon', 'Arbok', 'Dodrio', 'Ivysaur', 'Umbreon', 'Bayleef', 'Pinsir', 'Aggron', 'Persian', 'Swalot', 'Hariyama', 'Lickitung', 'Grovyle', 'Blaziken', 'Skarmory', 'Absol', 'Feraligatr', 'Venusaur', 'Alakazam', 'Tyranitar', 'Arcanine', 'Typhlosion', 'Sceptile', 'Ninetales', 'Swampert', 'Machamp', 'Meganium', 'Steelix', 'Charizard', 'Blastoise'] 
+    , minLevel: 20 
+    , maxLevel: 55
+    , unlocked: true
+    }
+    , pmd35: {
+      name: 'Buried Relic'
+    , pokes: ['Golbat', 'Sneasel', 'Wynaut', 'Raticate', 'Machop', 'Whismur', 'Hoothoot', 'Hitmonlee', 'Hitmonchan', 'Porygon', 'Gastly', 'Drowzee', 'Abra', 'Porygon2', 'Aron', 'Gulpin', 'Geodude', 'Noctowl', 'Ditto', 'Meditite', 'Wobbuffet', 'Hypno', 'Hitmontop', 'Shedinja', 'Makuhita', 'Sandshrew', 'Kadabra', 'Elekid', 'Mr. Mime', 'Pupitar', 'Rhyhorn', 'Arbok', 'Shiftry', 'Mawile', 'Graveler', 'Machoke', 'Haunter', 'Golem'] 
+    , minLevel: 10 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd36: {
+      name: 'Wish Cave'
+    , pokes: ['Bellsprout', 'Magnemite', 'Sunkern', 'Jigglypuff', 'Cleffa', 'Caterpie', 'Marill', 'Rattata', 'Togepi', 'Aron', 'Voltorb', 'Ralts', 'Meditite', 'Baltoy', 'Geodude', 'Natu', 'Beldum', 'Machop', 'Swinub', 'Skarmory', 'Trapinch', 'Spinarak', 'Electrike', 'Gligar', 'Nidoran m', 'Electabuzz', 'Manectric', 'Tauros', 'Abra', 'Murkrow', 'Ariados', 'Dunsparce', 'Nincada', 'Bagon', 'Golbat', 'Kadabra', 'Nidorina', 'Nidorino', 'Magmar', 'Illumise', 'Electrode', 'Forretress', 'Dugtrio', 'Hitmonlee', 'Hitmonchan', 'Numel', 'Ditto', 'Magcorgo', 'Torkoal', 'Rhyhorn', 'Piloswine', 'Arbok', 'Pineco', 'Lairon', 'Metang', 'Shelgon', 'Zangoose', 'Koffing', 'Rhydon', 'Graveler', 'Magby', 'Nidoqueen', 'Golem', 'Nidoking', 'Porygon2', 'Grimer', 'Camerupt', 'Shuppet', 'Hitmontop', 'Solrock', 'Weezing', 'Dusclops', 'Scizor', 'Flygon', 'Metagross', 'Claydol', 'Salamence'] 
+    , minLevel: 1 
+    , maxLevel: 28
+    , unlocked: true
+    }
+    , pmd37: {
+      name: 'Murky Cave'
+    , pokes: ['Cascoon', 'Zubat', 'Venonat', 'Seviper', 'Grimer', 'Dustox', 'Golbat', 'Shedinja', 'Shuppet', 'Crobat', 'Misdreavus', 'Muk', 'Swalot'] 
+    , minLevel: 8 
+    , maxLevel: 36
+    , unlocked: true
+    }
+    , pmd38: {
+      name: 'Desert Region'
+    , pokes: ['Sandshrew', 'Shedinja', 'Nosepass', 'Trapinch', 'Hitmontop', 'Nidoqueen', 'Baltoy', 'Sandslash', 'Gligar', 'Dusclops'] 
+    , minLevel: 30 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd39: {
+      name: 'Southern Cavern'
+    , pokes: ['Geodude', 'Diglett', 'Seedot', 'Cubone', 'Nidoking', 'Phanpy', 'Vibrava', 'Baltoy', 'Gligar', 'Larvitar', 'Ariados', 'Dugtrio', 'Marowak', 'Graveler', 'Rhyhorn', 'Flygon', 'Donphan', 'Pupitar', 'Golem', 'Onix', 'Rhydon'] 
+    , minLevel: 22 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd40: {
+      name: 'Wyvern Hill'
+    , pokes: ['Bagon', 'Dratini', 'Jumpluff', 'Altaria', 'Totodile', 'Ludicolo', 'Shelgon', 'Vibrava', 'Dragonair', 'Oddish', 'Salamence', 'Flygon', 'Dragonite'] 
+    , minLevel: 20 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd41: {
+      name: 'Darknight Relic'
+    , pokes: ['Shuppet', 'Gastly', 'Misdreavus', 'Shedinja', 'Sableye', 'Banette', 'Haunter', 'Duskull', 'Gengar'] 
+    , minLevel: 25 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd42: {
+      name: 'Grand Sea'
+    , pokes: ['Wingull', 'Tentacool', 'Qwilfish', 'Kabuto', 'Corsola', 'Slowpoke', 'Horsea', 'Dragonite', 'Anorith', 'Krabby', 'Staryu', 'Vaporeon', 'Tentacruel', 'Kabutops', 'Slowbro', 'Kingler', 'Seadra', 'Mantine'] 
+    , minLevel: 15 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd43: {
+      name: 'Waterfall Pond'
+    , pokes: ['Mudkip', 'Lotad', 'Poliwag', 'Goldeen', 'Barboach', 'Wooper', 'Surskit', 'Totodile', 'Corphish', 'Magikarp', 'Squirtle', 'Poliwhirl', 'Masquerian', 'Lombre', 'Marshtomp', 'Quagsire', 'Whiscash', 'Feebas', 'Poliwrath'] 
+    , minLevel: 24 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd44: {
+      name: 'Unown Relic'
+    , pokes: ['Unown'] 
+    , minLevel: 20 
+    , maxLevel: 20
+    , unlocked: true
+    }
+    , pmd45: {
+      name: 'Joyous Tower'
+    , pokes: [] 
+    , minLevel: 1 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd46: {
+      name: 'Far-off Sea'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd47: {
+      name: 'Purity Forest'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd48: {
+      name: 'Oddity Cave'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd49: {
+      name: 'Remains Island'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd50: {
+      name: 'Marvelous Sea'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd51: {
+      name: 'Fantasy Strait'
+    , pokes: [] 
+    , minLevel: 14 
+    , maxLevel: 17
+    , unlocked: true
+    }
+    , pmd52: {
+      name: 'Mt. Thunder Peak F3'
+    , pokes: ['Zapdos'] 
+    , minLevel: 25 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd53: {
+      name: 'Mt. Blaze Peak F3'
+    , pokes: ['Moltres'] 
+    , minLevel: 33 
+    , maxLevel: 52
+    , unlocked: true
+    }
+    , pmd54: {
+      name: 'Frosty Grotto F5'
+    , pokes: ['Articuno'] 
+    , minLevel: 33 
+    , maxLevel: 53
+    , unlocked: true
+    }
+    , pmd55: {
+      name: 'Magma Cavern Pit F3'
+    , pokes: ['Groudon'] 
+    , minLevel: 27 
+    , maxLevel: 37
+    , unlocked: true
+    }
+    , pmd56: {
+      name: 'Sky Tower Summit F9'
+    , pokes: ['Rayquaza'] 
+    , minLevel: 35 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd57: {
+      name: 'Stormy Sea F40'
+    , pokes: ['Kyogre'] 
+    , minLevel: 25 
+    , maxLevel: 25
+    , unlocked: true
+    }
+    , pmd58: {
+      name: 'Northern Range F25'
+    , pokes: ['Latios'] 
+    , minLevel: 30 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd59: {
+      name: 'Pitfall Valley F26'
+    , pokes: ['Latias'] 
+    , minLevel: 30 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd60: {
+      name: 'Silver Trench F99'
+    , pokes: ['Lugia'] 
+    , minLevel: 30 
+    , maxLevel: 30
+    , unlocked: true
+    }
+    , pmd61: {
+      name: 'Meteor Cave F20'
+    , pokes: ['Deoxys'] 
+    , minLevel: 35 
+    , maxLevel: 35
+    , unlocked: true
+    }
+    , pmd62: {
+      name: 'Fiery Field F30'
+    , pokes: ['Entei'] 
+    , minLevel: 45 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd63: {
+      name: 'Lightning Field F30'
+    , pokes: ['Raikou'] 
+    , minLevel: 45 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd64: {
+      name: 'Northwind Field F30'
+    , pokes: ['Suicune'] 
+    , minLevel: 45 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd65: {
+      name: 'Mt Faraway F40'
+    , pokes: ['Ho-Oh'] 
+    , minLevel: 50 
+    , maxLevel: 50
+    , unlocked: true
+    }
+    , pmd66: {
+      name: 'Western Cave F99'
+    , pokes: ['Mewtwo'] 
+    , minLevel: 40 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd67: {
+      name: 'Buried Relic F15'
+    , pokes: ['Regirock'] 
+    , minLevel: 18 
+    , maxLevel: 18
+    , unlocked: true
+    }
+    , pmd68: {
+      name: 'Buried Relic F25'
+    , pokes: ['Regice'] 
+    , minLevel: 23 
+    , maxLevel: 23
+    , unlocked: true
+    }
+    , pmd69: {
+      name: 'Buried Relic F35'
+    , pokes: ['Registeel'] 
+    , minLevel: 25 
+    , maxLevel: 25
+    , unlocked: true
+    }
+    , pmd70: {
+      name: 'Buried Relic F36-98'
+    , pokes: ['Mew'] 
+    , minLevel: 40 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd71: {
+      name: 'Wish Cave F99'
+    , pokes: ['Jirachi'] 
+    , minLevel: 40 
+    , maxLevel: 40
+    , unlocked: true
+    }
+    , pmd60: {
+      name: 'Purity Forest F99'
+    , pokes: ['Celebi'] 
+    , minLevel: 45 
+    , maxLevel: 45
+    , unlocked: true
+    }
+    , pmd60: {
+      name: 'Mt Freeze Peak F5'
+    , pokes: ['A-Ninetales'] 
+    , minLevel: 100 
+    , maxLevel: 100
+    , unlocked: true
+    }
+    , friendarea: {
+      name: 'Aged Chamber'
+    , pokes: ['Unown'] 
+    , minLevel: 1 
+    , maxLevel: 1
+    , unlocked: true
+    }
+    , friendarea1: {
+      name: 'Ancient Relic'
+    , pokes: ['Aerodactyl', 'Baltoy', 'Claydol', 'Regirock', 'Regice', 'Registeel'] 
+    , minLevel: 1 
+    , maxLevel: 1
+    , unlocked: true
+    }
+},
+  ExplorersOfSpace: {
+      pmd52: {
+      name: 'Personality Quiz'
+    , pokes: ['Bulbasaur', 'Charmander', 'Squirtle', 'Pikachu', 'Vulpix', 'Eevee', 'Chikorita', 'Cyndaquil', 'Totodile', 'Phanpy', 'Treecko', 'Torchic', 'Mudkip', 'Skitty', 'Turtwig', 'Chimchar', 'Piplup', 'Shinx', 'Munchlax', 'Riolu'] 
     , minLevel: 5
     , maxLevel: 5  
     , unlocked: true
     }
 },
-  ExplorersOfSpace: {
-      pmd201: {
-      name: 'Old Rod'
-    , pokes: ['Magikarp'] 
+  AdventureSquad: {
+      pmdj: {
+      name: 'Blazing Adventure Squad'
+    , pokes: ['Charmander', 'Vulpix', 'Growlithe', 'Eevee', 'Cyndaquil', 'Teddiursa', 'Torchic', 'Chimchar', 'Buneary'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    ,  pmdj16: {
+      name: 'Stormy Adventure Squad'
+    , pokes: ['Squirtle', 'Totodile', 'Wooper', 'Phanpy', 'Mudkip', 'Azurill', 'Wynaut', 'Piplup', 'Riolu'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    ,  pmdj32: {
+      name: 'Light Adventure Squad'
+    , pokes: ['Pikachu', 'Meowth', 'Psyduck', 'Pichu', 'Togepi', 'Mareep', 'Elekid', 'Shinx', 'Pachirisu'] 
     , minLevel: 5
     , maxLevel: 5  
     , unlocked: true
     }
 },
   GatesToInfinity: {
-      event1: {
-      name: 'Old Rod'
-    , pokes: ['Magikarp'] 
+      pmd301: {
+      name: 'Personality Quiz'
+    , pokes: ['Pikachu', 'Snivy', 'Tepig', 'Oshawott', 'Axew'] 
     , minLevel: 5
     , maxLevel: 5  
     , unlocked: true
     }
 },
   SuperMysteryDungeon: {
-      event1: {
-      name: 'Old Rod'
-    , pokes: ['Magikarp'] 
+      pmd401: {
+      name: 'Personality Quiz'
+    , pokes: ['Bulbasaur', 'Charmander', 'Squirtle', 'Pikachu', 'Chikorita', 'Cyndaquil', 'Totodile', 'Treecko', 'Torchic', 'Mudkip', 'Turtwig', 'Chimchar', 'Piplup', 'Riolu', 'Snivy', 'Tepig', 'Oshawott', 'Chespin', 'Fennekin', 'Froakie'] 
     , minLevel: 5
     , maxLevel: 5  
     , unlocked: true
