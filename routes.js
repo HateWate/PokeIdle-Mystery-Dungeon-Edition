@@ -677,105 +677,112 @@ const ROUTES = {
 	, johtocustom1: {
       name: 'Route 48'
     , pokes: ['Fearow', 'Vulpix', 'Gloom', 'Diglett', 'Growlithe', 'Farfetch/d', 'Tauros', 'Hoppip', 'Girafarig'] 
-    , minLevel: 13
-    , maxLevel: 17
+    , minLevel: 20
+    , maxLevel: 25
     , unlocked: true
     }
 	, johtocustom2: {
       name: 'Safari Zone (Peak)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Fearow', 'Paras', 'Geodude', 'Graveler', 'Slowbro', 'Magnemite', 'Magneton', 'Magmar', 'Wobbuffet', 'Linoone', 'Vigoroth', 'Lairon', 'Zangoose', 'Spheal', 'Bronzor'] 
+    , minLevel: 41
+    , maxLevel: 47
     , unlocked: true
     }
 	, johtocustom3: {
       name: 'Safari Zone (Desert)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Fearow', 'Sandshrew', 'Sandslash', 'Cubone', 'Marowak', 'Lotad', 'Spinda', 'Trapinch', 'Vibrava', 'Cacnea', 'Cacturne', 'Hippopotas', 'Carnivine'] 
+    , minLevel: 35
+    , maxLevel: 48
     , unlocked: true
     }
 	, johtocustom4: {
       name: 'Safari Zone (Plains)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Rattata', 'Raticate', 'Abra', 'Ponyta', 'Girafarig', 'Houndoom', 'Stantler', 'Smeargle', 'Zigzagoon', 'Lotad', 'Surskit', 'Manectric', 'Zangoose', 'Shinx'] 
+    , minLevel: 40
+    , maxLevel: 46
     , unlocked: true
     }
 	, johtocustom5: {
       name: 'Safari Zone (Meadow)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Raticate', 'Clefairy', 'Jigglypuff', 'Poliwag', 'Poliwhirl', 'Geodude', 'Chansey', 'Magikarp', 'Gyarados', 'Marill', 'Hoppip', 'Skiploom', 'Sunkern', 'Wooper', 'Seedot', 'Nuzleaf', 'Masquerain', 'Nosepass', 'Riolu'] 
+    , minLevel: 35
+    , maxLevel: 47
     , unlocked: true
     }
 	, johtocustom6: {
       name: 'Safari Zone (Forest)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Pidgey', 'Bellsprout', 'Gastly', 'Haunter', 'Lickitung', 'Mr. Mime', 'Electabuzz', 'Misdreavus', 'Surskit', 'Shuppet', 'Beldum', 'Bidoof', 'Budew', 'Bronzong'] 
+    , minLevel: 40
+    , maxLevel: 47
     , unlocked: true
     }
 	, johtocustom7: {
       name: 'Safari Zone (Swamp)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Jigglypuff', 'Paras', 'Parasect', 'Weepinbell', 'Drowzee', 'Hypno', 'Voltorb', 'Goldeen', 'Seaking', 'Magikarp', 'Dratini', 'Dragonair', 'Sentret', 'Furret', 'Murkrow', 'Duskull', 'Chimecho', 'Bagon', 'Pachirisu', 'Floatzel'] 
+    , minLevel: 35
+    , maxLevel: 48
     , unlocked: true
     }
 	, johtocustom8: {
       name: 'Safari Zone (Marshland)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Ekans', 'Arbok', 'Oddish', 'Gloom', 'Diglett', 'Poliwag', 'Poliwhirl', 'Grimer', 'Muk', 'Koffing', 'Weezing', 'Magikarp', 'Gyarados', 'Jumpluff', 'Wooper', 'Quagsire', 'Shuckle', 'Roselia', 'Seviper', 'Barboach', 'Banette', 'Croagunk', 'Carnivine'] 
+    , minLevel: 35
+    , maxLevel: 48
     , unlocked: true
     }
 	, johtocustom9: {
       name: 'Safari Zone (Mountain)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Rattata', 'Raticate', 'Zubat', 'Golbat', 'Magneton', 'Krabby', 'Lickitung', 'Larvitar', 'Meditite', 'Volbeat', 'Lunatone', 'Dusclops', 'Sealeo', 'Metang', 'Chingling'] 
+    , minLevel: 38
+    , maxLevel: 46
     , unlocked: true
     }
 	, johtocustom10: {
       name: 'Safari Zone (Rocky Beach)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Zubat', 'Poliwag', 'Poliwhirl', 'Slowpoke', 'Slowbro', 'Doduo', 'Dodrio', 'Krabby', 'Kingler', 'Goldeen', 'Seaking', 'Magikarp', 'Lapras', 'Mareep', 'Aron', 'Electrike', 'Manectric', 'Corphish', 'Budew', 'Gible'] 
+    , minLevel: 37
+    , maxLevel: 48
     , unlocked: true
     }
 	, johtocustom11: {
       name: 'Safari Zone (Wasteland)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Fearow', 'Golduck', 'Machop', 'Machoke', 'Bellsprout', 'Magnemite', 'Onix', 'Kingler', 'Kangaskhan', 'Breloom', 'Medicham' 'Manectric', 'Illumise', 'Solrock', 'Skorupi'] 
+    , minLevel: 40
+    , maxLevel: 48
     , unlocked: true
     }
 	, johtocustom12: {
       name: 'Safari Zone (Savannah)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Nidoran f', 'Nidorina', 'Nidoran m', 'Nidorino', 'Zubat', 'Golbat', 'Rhyhorn', 'Rhydon', 'Tauros', 'Houndour', 'Zigzagoon', 'Shroomish', 'Azurill', 'Torkoal', 'Cacturne', 'Luxio'] 
+    , minLevel: 38
+    , maxLevel: 47
     , unlocked: true
     }
 	, johtocustom13: {
       name: 'Safari Zone (Wetland)'
-    , pokes: [] 
-    , minLevel: 1
-    , maxLevel: 1
+    , pokes: ['Spearow', 'Psyduck', 'Golduck', 'Poliwag', 'Poliwhirl', 'Farfetch/d', 'Doduo', 'Magikarp', 'Gyarados', 'Ditto', 'Sentret', 'Furret', 'Wooper', 'Quagsire', 'Lombre', 'Surskit', 'Corphish', 'Shelgon', 'Pachirisu', 'Buizel'] 
+    , minLevel: 37
+    , maxLevel: 47
     , unlocked: true
     }
 	, route37: {
       name: 'Route 42'
-    , pokes: ['Mareep', 'Flaaffy', 'Marill'] 
+    , pokes: ['Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Zubat', 'Golbat', 'Mankey', 'Mareep', 'Flaaffy', 'Marill'] 
     , minLevel: 13
     , maxLevel: 17
     , unlocked: true
     }
 	, special32: {
       name: 'Mt.Mortar'
-    , pokes: ['Zubat', 'Golbat', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Raticate'] 
-    , minLevel: 15
+    , pokes: ['Rattata', 'Raticate', 'Zubat', 'Golbat', 'Machop', 'Geodude', 'Marill', 'Tyrogue'] 
+    , minLevel: 13
+    , maxLevel: 18
+    , unlocked: true
+    }
+	, special33: {
+      name: 'Mt.Mortar (Top)'
+    , pokes: ['Raticate', 'Golbat', 'Machop', 'Machoke', 'Geodude', 'Graveler', 'Marill'] 
+    , minLevel: 28
     , maxLevel: 32
     , unlocked: true
     }
@@ -786,7 +793,7 @@ const ROUTES = {
     , maxLevel: 17
     , unlocked: true
     }
-	, special33: {
+	, special34: {
       name: 'Lake of Rage'
     , pokes: ['Gyarados'] 
     , minLevel: 30
@@ -3705,11 +3712,272 @@ const ROUTES = {
     }
 },
   Custom_Events: {
-      customevent1: {
+      customevent: {
       name: 'SSB'
     , pokes: ['Pikachu', 'Jigglypuff', 'Mewtwo', 'Pichu', 'Ivysaur', 'Charizard', 'Squirtle', 'Lucario', 'Greninja', 'Incineroar'] 
     , minLevel: 100
     , maxLevel: 100  
+    , unlocked: true
+    }
+},
+  Type_Testing: {
+      typetest: {
+      name: 'Shadow'
+    , pokes: ['Lugia'] 
+    , minLevel: 100
+    , maxLevel: 100  
+    , unlocked: true
+    }
+    , typetest1: {
+      name: 'Pure Normal'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest2: {
+      name: 'Primary Normal'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest3: {
+      name: 'Pure Fighting'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest4: {
+      name: 'Primary Fighting'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest5: {
+      name: 'Pure Flying'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest6: {
+      name: 'Primary Flying'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest7: {
+      name: 'Pure Poison'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest8: {
+      name: 'Primary Poison'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest9: {
+      name: 'Pure Ground'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest10: {
+      name: 'Primary Ground'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest11: {
+      name: 'Pure Rock'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest12: {
+      name: 'Primary Rock'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest13: {
+      name: 'Pure Bug'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest14: {
+      name: 'Primary Bug'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest15: {
+      name: 'Pure Ghost'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest16: {
+      name: 'Primary Ghost'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest17: {
+      name: 'Pure Steel'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest18: {
+      name: 'Primary Steel'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest19: {
+      name: 'Pure Fire'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest20: {
+      name: 'Primary Fire'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest21: {
+      name: 'Pure Water'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest22: {
+      name: 'Primary Water'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest23: {
+      name: 'Pure Grass'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest24: {
+      name: 'Primary Grass'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest25: {
+      name: 'Pure Electric'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest26: {
+      name: 'Primary Electric'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest27: {
+      name: 'Pure Psychic'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest28: {
+      name: 'Primary Psychic'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest29: {
+      name: 'Pure Ice'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest30: {
+      name: 'Primary Ice'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest31: {
+      name: 'Pure Dragon'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest32: {
+      name: 'Primary Dragon'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest33: {
+      name: 'Pure Dark'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest34: {
+      name: 'Primary Dark'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest35: {
+      name: 'Pure Fairy'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
+    , unlocked: true
+    }
+    , typetest36: {
+      name: 'Primary Fairy'
+    , pokes: ['Rattata'] 
+    , minLevel: 5
+    , maxLevel: 5  
     , unlocked: true
     }
 }
